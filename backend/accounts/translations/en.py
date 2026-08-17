@@ -1,0 +1,15 @@
+MESSAGES = {
+    'otp_sent': 'OTP sent successfully.',
+    'account_exists': 'An account already exists with this number. Please log in.',
+    'account_missing': 'No account was found with this number.',
+    'invalid_phone': 'Enter a valid Bangladeshi mobile number, for example 01712345678.',
+    'otp_expired': 'The code has expired. Request a new code.',
+    'otp_wrong': 'The code is incorrect. You have {remaining} attempts remaining.',
+    'otp_consumed': 'The code has already been used or has expired.',
+    'refresh_missing': 'The refresh token cookie is missing.',
+    'refresh_invalid': 'The refresh token is invalid or expired.',
+    'provider_disabled': 'The OTP service is disabled and development OTP is not allowed.',
+    'provider_config': 'The OTP service configuration is incomplete.',
+    'provider_rejected': 'The OTP provider rejected the request.',
+    'provider_unavailable': 'The OTP service is currently unavailable.',
+}

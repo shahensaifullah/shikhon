@@ -1,0 +1,112 @@
+@layer components {
+  .content-shell {
+    width: min(100% - 2rem, 75rem);
+    margin-inline: auto;
+  }
+
+  .reading-width {
+    width: min(100%, 50rem);
+  }
+
+  .section-space {
+    padding-block: clamp(4.5rem, 9vw, 7.5rem);
+  }
+
+  .display-title {
+    font-size: clamp(2.65rem, 6vw, 4.75rem);
+    font-weight: 750;
+    line-height: 1.2;
+    letter-spacing: 0;
+  }
+
+  .section-title {
+    font-size: clamp(2rem, 4vw, 3.25rem);
+    font-weight: 720;
+    line-height: 1.28;
+    letter-spacing: 0;
+  }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: fit-content;
+    border: 1px solid color-mix(in srgb, var(--primary) 14%, transparent);
+    border-radius: 9999px;
+    background: color-mix(in srgb, var(--primary-fixed) 62%, white);
+    color: var(--on-primary-fixed-variant);
+    padding: 0.45rem 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0;
+  }
+
+  .btn {
+    display: inline-flex;
+    min-height: 3rem;
+    align-items: center;
+    justify-content: center;
+    gap: 0.625rem;
+    border-radius: 0.75rem;
+    padding-inline: 1.25rem;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    line-height: 1.5;
+    transition: transform 180ms ease, background-color 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+  }
+
+  .btn:hover { transform: translateY(-1px); }
+  .btn:active { transform: translateY(0) scale(0.98); }
+
+  .btn-primary {
+    background: var(--primary-container);
+    color: var(--on-primary);
+    box-shadow: 0 12px 25px -14px rgb(37 99 235 / 80%);
+  }
+
+  .btn-primary:hover { background: var(--primary); }
+
+  .btn-secondary {
+    border: 2px solid var(--primary);
+    background: transparent;
+    color: var(--primary);
+  }
+
+  .btn-secondary:hover { background: var(--primary-fixed); }
+
+  .btn-ghost {
+    color: var(--on-surface-variant);
+  }
+
+  .btn-ghost:hover {
+    background: var(--surface-container-low);
+    color: var(--primary);
+  }
+
+  .card {
+    border: 1px solid color-mix(in srgb, var(--outline-variant) 55%, transparent);
+    border-radius: 1rem;
+    background: var(--surface-container-lowest);
+    box-shadow: var(--shadow-card);
+  }
+
+  .icon-tile {
+    display: inline-flex;
+    width: 3rem;
+    height: 3rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.875rem;
+  }
+
+  .text-balance { text-wrap: balance; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,4 @@
+from .ban import MESSAGES as BAN_MESSAGES
+from .en import MESSAGES as EN_MESSAGES
+
+TRANSLATIONS = {'ban': BAN_MESSAGES, 'en': EN_MESSAGES}
